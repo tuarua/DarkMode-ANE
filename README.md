@@ -1,10 +1,10 @@
 ## DarkMode-ANE
 
-Enable Dark Mode on MacOS Mojave for your AIR app.
+Enable Dark Mode on macOS Mojave for your AIR app.
 
 ##### Dependencies
-From the command line cd into /example and run:
-- OSX
+From the Terminal cd into /example and run:
+
 ```shell
 bash get_dependencies.sh
 ```
@@ -16,7 +16,7 @@ You will need:
 - macOS 10.14 (Mojave) or greater
 - IntelliJ IDEA / Flash Builder
 - AIR 19 or greater
-- wget on OSX
+- wget on macOS
 
 ### References
 * [https://support.apple.com/en-us/HT208976]
