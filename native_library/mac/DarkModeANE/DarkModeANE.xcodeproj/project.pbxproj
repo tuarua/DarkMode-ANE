@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		905049D02286E882004CFB68 /* FreMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 905049CE2286E882004CFB68 /* FreMacros.h */; };
+		905049D12286E882004CFB68 /* DarkModeANE_oc.h in Headers */ = {isa = PBXBuildFile; fileRef = 905049CF2286E882004CFB68 /* DarkModeANE_oc.h */; };
+		905049D42286E895004CFB68 /* SwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905049D22286E895004CFB68 /* SwiftController.swift */; };
+		905049D52286E895004CFB68 /* DarkModeANE.m in Sources */ = {isa = PBXBuildFile; fileRef = 905049D32286E895004CFB68 /* DarkModeANE.m */; };
+		905049D72286EAAA004CFB68 /* SwiftController+FreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905049D62286EAAA004CFB68 /* SwiftController+FreSwift.swift */; };
+		CE05BF0D1F657B6C0019899B /* FreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05BF0C1F657B6C0019899B /* FreSwift.framework */; };
+		CE9ACAA11EEC67B9007F0BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9ACAA01EEC67B9007F0BBE /* Cocoa.framework */; };
+		CE9ACAA31EEC6814007F0BBE /* Adobe AIR_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9ACAA21EEC6814007F0BBE /* Adobe AIR_64 */; };
+		CE9ACAA51EEC681A007F0BBE /* Adobe AIR in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9ACAA41EEC681A007F0BBE /* Adobe AIR */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		905049CD2286E859004CFB68 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DarkModeANE/Info.plist; sourceTree = SOURCE_ROOT; };
+		905049CE2286E882004CFB68 /* FreMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreMacros.h; sourceTree = "<group>"; };
+		905049CF2286E882004CFB68 /* DarkModeANE_oc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkModeANE_oc.h; sourceTree = "<group>"; };
+		905049D22286E895004CFB68 /* SwiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftController.swift; sourceTree = "<group>"; };
+		905049D32286E895004CFB68 /* DarkModeANE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkModeANE.m; sourceTree = "<group>"; };
+		905049D62286EAAA004CFB68 /* SwiftController+FreSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftController+FreSwift.swift"; sourceTree = "<group>"; };
+		CE05BF0C1F657B6C0019899B /* FreSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreSwift.framework; path = Carthage/Build/Mac/FreSwift.framework; sourceTree = "<group>"; };
+		CE9ACA941EEC6609007F0BBE /* DarkModeANE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkModeANE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9ACAA01EEC67B9007F0BBE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE9ACAA21EEC6814007F0BBE /* Adobe AIR_64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR_64"; path = "/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air-captive/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64"; sourceTree = "<absolute>"; };
+		CE9ACAA41EEC681A007F0BBE /* Adobe AIR */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR"; path = "/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air-captive/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9ACA901EEC6609007F0BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9ACAA11EEC67B9007F0BBE /* Cocoa.framework in Frameworks */,
+				CE05BF0D1F657B6C0019899B /* FreSwift.framework in Frameworks */,
+				CE9ACAA51EEC681A007F0BBE /* Adobe AIR in Frameworks */,
+				CE9ACAA31EEC6814007F0BBE /* Adobe AIR_64 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		905049CA2286E810004CFB68 /* DarkModeANE */ = {
+			isa = PBXGroup;
+			children = (
+				9070AB21228733FF00D4FC1D /* Misc */,
+				905049D32286E895004CFB68 /* DarkModeANE.m */,
+				905049D22286E895004CFB68 /* SwiftController.swift */,
+				905049D62286EAAA004CFB68 /* SwiftController+FreSwift.swift */,
+				905049CB2286E82A004CFB68 /* Headers */,
+			);
+			path = DarkModeANE;
+			sourceTree = "<group>";
+		};
+		905049CB2286E82A004CFB68 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				905049CF2286E882004CFB68 /* DarkModeANE_oc.h */,
+				905049CE2286E882004CFB68 /* FreMacros.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		9070AB21228733FF00D4FC1D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				905049CD2286E859004CFB68 /* Info.plist */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		CE9ACA8A1EEC6609007F0BBE = {
+			isa = PBXGroup;
+			children = (
+				905049CA2286E810004CFB68 /* DarkModeANE */,
+				CE9ACA9F1EEC67B9007F0BBE /* Frameworks */,
+				CE9ACA951EEC6609007F0BBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9ACA951EEC6609007F0BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9ACA941EEC6609007F0BBE /* DarkModeANE.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9ACA9F1EEC67B9007F0BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE05BF0C1F657B6C0019899B /* FreSwift.framework */,
+				CE9ACAA41EEC681A007F0BBE /* Adobe AIR */,
+				CE9ACAA21EEC6814007F0BBE /* Adobe AIR_64 */,
+				CE9ACAA01EEC67B9007F0BBE /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE9ACA911EEC6609007F0BBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905049D12286E882004CFB68 /* DarkModeANE_oc.h in Headers */,
+				905049D02286E882004CFB68 /* FreMacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE9ACA931EEC6609007F0BBE /* DarkModeANE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9ACA9C1EEC6609007F0BBE /* Build configuration list for PBXNativeTarget "DarkModeANE" */;
+			buildPhases = (
+				CE9ACA8F1EEC6609007F0BBE /* Sources */,
+				CE9ACA901EEC6609007F0BBE /* Frameworks */,
+				CE9ACA911EEC6609007F0BBE /* Headers */,
+				CEA089742053852F005C5E9A /* ShellScript */,
+				CE9ACAB81EEC7289007F0BBE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkModeANE;
+			productName = TaskbarProgressANE;
+			productReference = CE9ACA941EEC6609007F0BBE /* DarkModeANE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9ACA8B1EEC6609007F0BBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Tua Rua Ltd";
+				TargetAttributes = {
+					CE9ACA931EEC6609007F0BBE = {
+						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = CE9ACA8E1EEC6609007F0BBE /* Build configuration list for PBXProject "DarkModeANE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE9ACA8A1EEC6609007F0BBE;
+			productRefGroup = CE9ACA951EEC6609007F0BBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9ACA931EEC6609007F0BBE /* DarkModeANE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE9ACAB81EEC7289007F0BBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "../../../native_extension/ane/build.sh\n";
+		};
+		CEA089742053852F005C5E9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9ACA8F1EEC6609007F0BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905049D42286E895004CFB68 /* SwiftController.swift in Sources */,
+				905049D52286E895004CFB68 /* DarkModeANE.m in Sources */,
+				905049D72286EAAA004CFB68 /* SwiftController+FreSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE9ACA9A1EEC6609007F0BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TaskbarProgressANE-Swift.h";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE9ACA9B1EEC6609007F0BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TaskbarProgressANE-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE9ACA9D1EEC6609007F0BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac,
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				HEADER_SEARCH_PATHS = ../../../includes;
+				INFOPLIST_FILE = "$(SRCROOT)/DarkModeANE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					"\"Adobe AIR\"",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuarua.DarkModeANE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "DarkModeANE-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		CE9ACA9E1EEC6609007F0BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac,
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				HEADER_SEARCH_PATHS = ../../../includes;
+				INFOPLIST_FILE = "$(SRCROOT)/DarkModeANE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					"\"Adobe AIR\"",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuarua.DarkModeANE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "DarkModeANE-Swift.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9ACA8E1EEC6609007F0BBE /* Build configuration list for PBXProject "DarkModeANE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9ACA9A1EEC6609007F0BBE /* Debug */,
+				CE9ACA9B1EEC6609007F0BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9ACA9C1EEC6609007F0BBE /* Build configuration list for PBXNativeTarget "DarkModeANE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9ACA9D1EEC6609007F0BBE /* Debug */,
+				CE9ACA9E1EEC6609007F0BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9ACA8B1EEC6609007F0BBE /* Project object */;
+}
