@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="DarkModeANE" type="flex">
     <CLASSES>
-      <root url="jar://$DOCUMENTS$/DarkModeANE/native_extension/ane/DarkModeANE.ane!/" />
+      <root url="jar://$DOCUMENTS$/DarkMode-ANE/native_extension/ane/DarkModeANE.ane!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

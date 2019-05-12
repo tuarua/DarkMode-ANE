@@ -8,13 +8,13 @@
             <entry library-name="FreSwift" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="DarkModeANE" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
             <entry library-name="FiraSansSemiBold" library-level="project">
               <dependency linkage="Merged" />
             </entry>
             <entry library-name="greensock" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="DarkModeANE" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -25,11 +25,7 @@
             <entry key="compiler.locale" value="en_US" />
           </map>
         </compiler-options>
-        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/Main-app.xml" package-file-name="Main">
-          <files-to-package>
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/appicons" path-in-package="." />
-          </files-to-package>
-        </packaging-air-desktop>
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/Main-app.xml" package-file-name="Main" />
         <packaging-android />
         <packaging-ios />
       </configuration>
