@@ -29,7 +29,7 @@ public class SwiftController: NSObject {
         guard argc > 0,
             let value = Bool(argv[0])
             else {
-                return FreArgError(message: "setIsDarkMode").getError(#file, #line, #column)
+                return FreArgError().getError()
         }
         
         if value {
