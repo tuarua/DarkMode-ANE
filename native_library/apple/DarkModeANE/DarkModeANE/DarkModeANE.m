@@ -17,23 +17,18 @@
 #import "DarkModeANE_oc.h"
 #import <DarkModeANE/DarkModeANE-Swift.h>
 
-SWIFT_DECL(TRDM) // use unique prefix throughout to prevent clashes with other ANEs
+SWIFT_DECL(TRDM)
 
 CONTEXT_INIT(TRDM) {
     SWIFT_INITS(TRDM)
     
-    /**************************************************************************/
-    /******* MAKE SURE TO ADD FUNCTIONS HERE THE SAME AS SWIFT CONTROLLER *****/
-    /**************************************************************************/
     static FRENamedFunction extensionFunctions[] =
     {
          MAP_FUNCTION(TRDM, getIsEnabled)
         ,MAP_FUNCTION(TRDM, setIsEnabled)
         ,MAP_FUNCTION(TRDM, isAvailable)
     };
-    /**************************************************************************/
-    /**************************************************************************/
-    
+
     SET_FUNCTIONS
     
 }
