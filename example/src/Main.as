@@ -71,7 +71,7 @@ public class Main extends Sprite {
 
     private function onExiting(event:Event):void {
         DarkMode.dispose();
-        freSwiftANE.dispose();
+        FreSwift.dispose();
     }
 }
 }
