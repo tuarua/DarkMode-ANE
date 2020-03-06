@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="Main">
     <configurations>
-      <configuration name="Main" target-platform="Desktop" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/bin-debug">
+      <configuration name="Main" target-platform="Desktop" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/bin-release">
         <dependencies>
           <entries>
             <entry library-name="FreSwift" library-level="project">

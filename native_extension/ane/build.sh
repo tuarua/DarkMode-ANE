@@ -40,7 +40,7 @@ cp "$pathtome/library.swf" "$pathtome/platforms/default"
 
 #Copy native libraries into place.
 echo "Copying native libraries into place."
-cp -R -L "$pathtome/../../native_library/mac/$PROJECT_NAME/Build/Products/Release/$PROJECT_NAME.framework" "$pathtome/platforms/mac/release"
+cp -R -L "$pathtome/../../native_library/apple/$PROJECT_NAME/Build/Products/Release/$PROJECT_NAME.framework" "$pathtome/platforms/mac/release"
 rm -r "$pathtome/platforms/mac/release/$PROJECT_NAME.framework/Versions"
 
 #Run the build command.
