@@ -17,6 +17,9 @@
             <entry library-name="DarkModeANE" library-level="project">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="extensions" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_32" />
         </dependencies>
@@ -45,5 +48,6 @@
     <orderEntry type="library" exported="" name="DarkModeANE" level="project" />
     <orderEntry type="library" exported="" name="FiraSansSemiBold" level="project" />
     <orderEntry type="library" exported="" name="greensock" level="project" />
+    <orderEntry type="library" exported="" name="extensions" level="project" />
   </component>
 </module>
