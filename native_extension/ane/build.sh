@@ -14,14 +14,14 @@ echo $AIR_SDK
 #Setup the directory.
 echo "Making directories."
 
-if [[ ! -d "$pathtome/platforms" ]]; then
+if [ ! -d "$pathtome/platforms" ]; then
 mkdir "$pathtome/platforms"
 fi
-if [[ ! -d "$pathtome/platforms/mac" ]]; then
+if [ ! -d "$pathtome/platforms/mac" ]; then
 mkdir "$pathtome/platforms/mac"
 mkdir "$pathtome/platforms/mac/release"
 fi
-if [[ ! -d "$pathtome/platforms/default" ]]; then
+if [ ! -d "$pathtome/platforms/default" ]; then
 mkdir "$pathtome/platforms/default"
 fi
 
@@ -51,7 +51,9 @@ echo "Building Release."
 -platform MacOS-x86-64 -C "$pathtome/platforms/mac/release" "$PROJECT_NAME.framework" "library.swf" \
 -platform default -C "$pathtome/platforms/default" "library.swf"
 
-#zip "$pathtome/$PROJECT_NAME.ane" -u docs/*
+zip "$pathtome/$PROJECT_NAME.ane" -u "air_package.json"
+
+cp "$pathtome/$PROJECT_NAME.ane" "$pathtome/../../example/extensions/$PROJECT_NAME.ane"
 
 
 rm -r "$pathtome/platforms/mac"
