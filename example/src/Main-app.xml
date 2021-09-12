@@ -3,7 +3,7 @@
   <id>DarkModeANEExample</id>
   <filename>Main</filename>
   <name>Main</name>
-  <versionNumber>1.5.0</versionNumber>
+  <versionNumber>1.6.0</versionNumber>
   <initialWindow>
     <!-- The main SWF or HTML file of the application. Required. -->
     <!-- Note: In Flash Builder, the SWF reference is set automatically. -->
