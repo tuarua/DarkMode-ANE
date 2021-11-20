@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,6 @@
 		905049D72286EAAA004CFB68 /* SwiftController+FreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905049D62286EAAA004CFB68 /* SwiftController+FreSwift.swift */; };
 		CE05BF0D1F657B6C0019899B /* FreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05BF0C1F657B6C0019899B /* FreSwift.framework */; };
 		CE9ACAA11EEC67B9007F0BBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9ACAA01EEC67B9007F0BBE /* Cocoa.framework */; };
-		CE9ACAA31EEC6814007F0BBE /* Adobe AIR_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9ACAA21EEC6814007F0BBE /* Adobe AIR_64 */; };
 		CE9ACAA51EEC681A007F0BBE /* Adobe AIR in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9ACAA41EEC681A007F0BBE /* Adobe AIR */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +27,7 @@
 		CE05BF0C1F657B6C0019899B /* FreSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreSwift.framework; path = Carthage/Build/Mac/FreSwift.framework; sourceTree = "<group>"; };
 		CE9ACA941EEC6609007F0BBE /* DarkModeANE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DarkModeANE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9ACAA01EEC67B9007F0BBE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		CE9ACAA21EEC6814007F0BBE /* Adobe AIR_64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR_64"; path = "/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air-captive/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64"; sourceTree = "<absolute>"; };
-		CE9ACAA41EEC681A007F0BBE /* Adobe AIR */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR"; path = "/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air-captive/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR"; sourceTree = "<absolute>"; };
+		CE9ACAA41EEC681A007F0BBE /* Adobe AIR */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR"; path = "/Users/eoinlandy/SDKs/AIRSDK_33.1.1.633/runtimes/air-captive/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +38,6 @@
 				CE9ACAA11EEC67B9007F0BBE /* Cocoa.framework in Frameworks */,
 				CE05BF0D1F657B6C0019899B /* FreSwift.framework in Frameworks */,
 				CE9ACAA51EEC681A007F0BBE /* Adobe AIR in Frameworks */,
-				CE9ACAA31EEC6814007F0BBE /* Adobe AIR_64 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +95,6 @@
 			children = (
 				CE05BF0C1F657B6C0019899B /* FreSwift.framework */,
 				CE9ACAA41EEC681A007F0BBE /* Adobe AIR */,
-				CE9ACAA21EEC6814007F0BBE /* Adobe AIR_64 */,
 				CE9ACAA01EEC67B9007F0BBE /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -144,7 +140,7 @@
 		CE9ACA8B1EEC6609007F0BBE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Tua Rua Ltd";
 				TargetAttributes = {
 					CE9ACA931EEC6609007F0BBE = {
@@ -155,7 +151,7 @@
 				};
 			};
 			buildConfigurationList = CE9ACA8E1EEC6609007F0BBE /* Build configuration list for PBXProject "DarkModeANE" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -219,7 +215,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -283,7 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -329,8 +325,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "TaskbarProgressANE-Swift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -350,7 +347,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac,
+					/Users/eoinlandy/SDKs/AIRSDK_33.1.1.633/runtimes/air/mac,
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
@@ -358,9 +355,13 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DarkModeANE/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac;
-				MARKETING_VERSION = 1.6.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /Users/eoinlandy/SDKs/AIRSDK_33.1.1.633/runtimes/air/mac;
+				MARKETING_VERSION = 1.7.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					"\"Adobe AIR\"",
@@ -391,7 +392,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					/Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac,
+					/Users/eoinlandy/SDKs/AIRSDK_33.1.1.633/runtimes/air/mac,
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
@@ -399,9 +400,13 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DarkModeANE/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/eoinlandy/SDKs/AIRSDK_32/runtimes/air/mac;
-				MARKETING_VERSION = 1.6.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = /Users/eoinlandy/SDKs/AIRSDK_33.1.1.633/runtimes/air/mac;
+				MARKETING_VERSION = 1.7.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					"\"Adobe AIR\"",
