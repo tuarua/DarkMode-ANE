@@ -8,7 +8,7 @@ You will need:
 
 - macOS 10.14 (Mojave) or greater
 - IntelliJ IDEA
-- AIR 33.1.1.217+
+- AIR 50.1.1+
 - [.Net Core Runtime](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [AIR-Tools](https://github.com/tuarua/AIR-Tools/)
 
